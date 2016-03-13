@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_blank">
+  <title>Webcam Recorder</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  div.select {
+    margin: 0 0 1em 0;
+  }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+
+    <div class="select">
+      <label for="audioSource">Audio source: </label><select class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="audioSource"></select>
+    </div>
+
+    <div class="select">
+      <label for="videoSource">Video source: </label><select class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="videoSource"></select>
+    </div>
+
+    <div style="height:320px;width:100%">
+      <input name="camBtn" type="button" value="Take Photo" class="btn btn-default" onClick="startRecording()">&nbsp;&nbsp;&nbsp;<input name="resetBtn" type="button" value="Reset Camera" class="btn btn-default" onClick="stopRecording()"><br/><br/>
+      <video autoplay controls></video>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</div>
+
+
+</body>
+</html>
